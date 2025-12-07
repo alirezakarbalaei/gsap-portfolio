@@ -5,10 +5,10 @@ const navLinks = [
     },
     {
        id: "about",
-       title: "About Us",
+       title: "About ME",
     },
     {
-       id: "work",
+       id: "art",
        title: "The Art",
     },
     {

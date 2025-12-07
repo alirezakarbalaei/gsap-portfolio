@@ -27,11 +27,14 @@ const Cocktails = () => {
 
   return (
     <div id="cocktails" className="noisy">
-      <img src="/images/cocktail-left-leaf.png" alt="l-leaf" id="c-left-leaf" />
+      <img src="/images/knowledge.png" alt="l-leaf" id="c-left-leaf"
+        className="w-[400px]"
+       />
       <img
-        src="/images/cocktail-right-leaf.png"
+        src="/images/knowledge.png"
         alt="l-right"
         id="c-right-leaf"
+        className="w-[400px]"
       />
 
       <div className="list">
