@@ -28,7 +28,7 @@ const Art = () => {
       .to(".masked-img", {
         scale: 1.3,
         maskedPosition: "center",
-        maskSize: "400%",
+        maskSize: "600%",
         duration: 1,
         ease: "power1.inOut",
       })
@@ -70,10 +70,10 @@ const Art = () => {
         <div className="masked-container">
           <h2 className="will-fade">Sip-Worthy Perfection</h2>
           <div id="masked-content">
-            <h3>Made with Craft, Poured with Passion</h3>
+            <h3>Written with Instinct, Styled with Vibes</h3>
             <p>
-              This isn't just a drink, It's a carefully crafted moment made just
-              for you.
+              This isn’t just a front end, it’s a free-form digital moment made
+              for you
             </p>
           </div>
         </div>

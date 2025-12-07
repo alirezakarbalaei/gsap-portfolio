@@ -42,14 +42,16 @@ const Contact = () => {
   return (
     <footer id="contact">
       <img
-        src="/images/footer-right-leaf.png"
+        src="/images/contact-me.png"
         alt="leaf-right"
         id="f-right-leaf"
+        className="w-[200px]"
       />
       <img
-        src="/images/footer-left-leaf.png"
+        src="/images/earth.png"
         alt="leaf-left"
         id="f-left-leaf"
+        className="w-[200px]"
       />
 
       <div className="content">

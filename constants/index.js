@@ -19,56 +19,49 @@ const navLinks = [
    
    const cocktailLists = [
     {
-       name: "Chapel Hill Shiraz",
+       name: "ADMIRAL COMPANY ",
        country: "AU",
-       detail: "Battle",
-       price: "$10",
+       detail: "ON SITE",
+       price: "2 years",
     },
     {
-       name: "Caten Malbee",
-       country: "AU",
-       detail: "Battle",
-       price: "$49",
+       name: "LANDROCKER",
+       country: "Iran",
+       detail: "ON SITE",
+       price: "1 year",
     },
     {
-       name: "Rhino Pale Ale",
-       country: "CA",
-       detail: "750 ml",
-       price: "$20",
-    },
-    {
-       name: "Irish Guinness",
-       country: "IE",
-       detail: "600 ml",
-       price: "$29",
-    },
+       name: "SAIPA",
+       country: "Iran",
+       detail: "PART TME",
+       price: "4 months",
+    }
    ];
    
    const mockTailLists = [
     {
-       name: "Tropical Bloom",
-       country: "US",
-       detail: "Battle",
-       price: "$10",
+       name: "Gotimate",
+       country: "OMAN",
+       detail: "Remote",
+       price: "1 year",
     },
     {
-       name: "Passionfruit Mint",
-       country: "US",
-       detail: "Battle",
+       name: "Loaningo",
+       country: "Oman",
+       detail: "Remote",
        price: "$49",
     },
     {
-       name: "Citrus Glow",
-       country: "CA",
-       detail: "750 ml",
-       price: "$20",
-    },
-    {
-       name: "Lavender Fizz",
-       country: "IE",
-       detail: "600 ml",
-       price: "$29",
-    },
+      name: "Viola Payments",
+      country: "Iran",
+      detail: "Remote",
+      price: "$49",
+   }, {
+      name: "Nagila",
+      country: "Oman",
+      detail: "Remote",
+      price: "$49",
+   },
    ];
    
    const profileLists = [
@@ -86,19 +79,19 @@ const navLinks = [
     },
    ];
    
-   const featureLists = [
-    "Perfectly balanced blends",
-    "Garnished to perfection",
-    "Ice-cold every time",
-    "Expertly shaken & stirred",
-   ];
+   const featureLists =  [
+      "Code that feels intuitive",
+      "Interfaces that spark delight",
+      "Smooth interactions every time",
+      "Thoughtfully crafted experiences"
+    ];
    
    const goodLists = [
-    "Handpicked ingredients",
-    "Signature techniques",
-    "Bartending artistry in action",
-    "Freshly muddled flavors",
-   ];
+      "User emotions at the core",
+      "Designs that resonate deeply",
+      "Empathy-driven decisions in action",
+      "Moments that leave an impact"
+    ];
    
    const storeInfo = {
     heading: "Where to Find Us",

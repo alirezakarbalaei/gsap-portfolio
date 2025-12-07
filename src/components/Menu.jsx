@@ -55,14 +55,16 @@ const Menu = () => {
   return (
     <section id="menu" aria-labelledby="menu-heading">
       <img
-        src="/images/slider-left-leaf.png"
+        src="/images/confusion.png"
         alt="left-leaf"
         id="m-left-leaf"
+        className="w-[200px]"
       />
       <img
-        src="/images/slider-right-leaf.png"
+        src="/images/git.png"
         alt="right-leaf"
         id="m-right-leaf"
+        className="w-[200px]"
       />
 
       <h2 id="menu-heading" className="sr-only">

@@ -40,8 +40,8 @@ const About = () => {
           <div className="md:col-span-8">
             <p className="badge">Best Cocktails</p>
             <h2>
-              Where every details mattesrs <span className="text-white">-</span>{" "}
-              from muddle to garnish
+              Histories <span className="text-white">-</span>{" "}
+              whispers the stories that shaped who we are today
             </h2>
           </div>
           <div className="sub-content">

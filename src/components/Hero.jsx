@@ -75,10 +75,11 @@ const Hero = () => {
 
   return (
     <>
-      <section id="hero" >
-        <h1 className="title">Alireza karbalaei</h1>
+      <section id="hero">
+        <div className="noisy" />
+        <h1 className="title">FreeStyle</h1>
         <img
-          src="/images/mechanical-keyboard.png"
+          src="/images/rubber-ducky.png"
           alt="left-leaf"
           className="left-leaf w-[200px] "
         />
@@ -97,9 +98,11 @@ const Hero = () => {
             </div>
             <div className="view-cocktails">
               <p className="subtitle">
-                Every project I create is a blend of solid engineering,
-                practical design, and modern tech — built to feel smooth, smart,
-                and effortless.
+                Emotion-driven development focuses on designing software that
+                anticipates and responds to users feelings, creating
+                experiences that feel intuitive, engaging, and human-centered.
+                It prioritizes emotional impact alongside functionality to boost
+                satisfaction and connection.
               </p>
               <a href="#cocktails">View Experiences</a>
             </div>
