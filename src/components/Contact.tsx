@@ -1,5 +1,4 @@
-import React from "react";
-import { openingHours, socials } from "../../constants";
+import { socials } from "../../constants";
 import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/all";
 import gsap from "gsap";
