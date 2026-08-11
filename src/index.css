@@ -188,10 +188,6 @@ body {
           p {
             @apply text-sm;
           }
-
-          span {
-            @apply text-xl font-medium;
-          }
         }
       }
     }

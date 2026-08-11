@@ -1,5 +1,5 @@
 import React from "react";
-import { cocktailLists, mockTailLists } from "../../constants";
+import { recentExperiences, moreExperiences } from "../../constants";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
@@ -42,15 +42,17 @@ const Experiences = () => {
           <h2>Recents:</h2>
 
           <ul>
-            {cocktailLists.map(({ name, country, detail, price }) => (
-              <li key={name}>
-                <div className="md:me-28">
-                  <h3>{name}</h3>
-                  <p>
-                    {country} | {detail}
-                  </p>
+            {recentExperiences.map(({ role, company, period, points }) => (
+              <li key={company}>
+                <div>
+                  <h3>
+                    {role} - {company}
+                  </h3>
+                  <p className="text-yellow">{period}</p>
+                  {points.map((point) => (
+                    <p key={point}>{point}</p>
+                  ))}
                 </div>
-                <span>- {price}</span>
               </li>
             ))}
           </ul>
@@ -60,15 +62,17 @@ const Experiences = () => {
           <h2>Others:</h2>
 
           <ul>
-            {mockTailLists.map(({ name, country, detail, price }) => (
-              <li key={name}>
-                <div className="me-28">
-                  <h3>{name}</h3>
-                  <p>
-                    {country} | {detail}
-                  </p>
+            {moreExperiences.map(({ role, company, period, points }) => (
+              <li key={company}>
+                <div>
+                  <h3>
+                    {role} - {company}
+                  </h3>
+                  <p className="text-yellow">{period}</p>
+                  {points.map((point) => (
+                    <p key={point}>{point}</p>
+                  ))}
                 </div>
-                <span>- {price}</span>
               </li>
             ))}
           </ul>

@@ -17,51 +17,73 @@ const navLinks = [
     },
    ];
    
-   const cocktailLists = [
+   const recentExperiences = [
     {
-       name: "ADMIRAL COMPANY ",
-       country: "AU",
-       detail: "ON SITE",
-       price: "2 years",
+       role: "Frontend Team-Lead",
+       company: "Balam Logistics",
+       period: "March 2023 – March 2026 | Full Time",
+       points: [
+          "Built data-heavy dashboards and operational workflows for logistics ERP",
+          "Reduced pressure on business manual workflows by 63% through optimized dashboards and automated processes",
+          "Implemented PWAs with real-time updates, push notifications, and live fleet maps (OpenStreetMap + Leaflet)",
+          "Streamlined delivery pipeline with Git flow, CI/CD, and release management",
+       ],
     },
     {
-       name: "LANDROCKER",
-       country: "Iran",
-       detail: "ON SITE",
-       price: "1 year",
+       role: "Frontend",
+       company: "Badbadak",
+       period: "March 2022 – March 2023 | Full Time",
+       points: [
+          "Supported up to +4,000 concurrent players during peak activity",
+          "Developed a B2C blockchain game launched on steam and token launched on Uniswap and Binance",
+          "Collaborated with cross-functional teams to deliver scalable frontend architecture",
+       ],
     },
     {
-       name: "SAIPA",
-       country: "Iran",
-       detail: "PART TME",
-       price: "4 months",
-    }
+       role: "Frontend",
+       company: "Parax Co",
+       period: "March 2019 – March 2022 | Full Time",
+       points: [
+          "Developed admin panels and CMS for Sarmad Insurance and Saipa operations teams",
+          "Optimized complex forms, dashboards, and reporting flows",
+       ],
+    },
    ];
    
-   const mockTailLists = [
+   const moreExperiences = [
     {
-       name: "Gotimate",
-       country: "OMAN",
-       detail: "Remote",
-       price: "1 year",
+       role: "Frontend",
+       company: "Gotimate",
+       period: "Oman | Remote | 2020 | Freelance",
+       points: [
+          "Conducted blockchain network market research to inform strategic development decisions",
+       ],
     },
     {
-       name: "Loaningo",
-       country: "Oman",
-       detail: "Remote",
-       price: "$49",
+       role: "Frontend",
+       company: "Loaningo",
+       period: "Oman | Remote | 2020 | Freelance",
+       points: [
+          "Built frontend for a crypto lending platform, improving user experience and loan management flows",
+       ],
     },
     {
-      name: "Viola Payments",
-      country: "Iran",
-      detail: "Remote",
-      price: "$49",
-   }, {
-      name: "Nagila",
-      country: "Oman",
-      detail: "Remote",
-      price: "$49",
-   },
+       role: "Frontend",
+       company: "Viola",
+       period: "March 2017 – March 2019 | Full Time",
+       points: [
+          "Enhanced fintech platform for global payments and virtual cards, optimizing transaction workflows and UX",
+          "Developed dedicated WordPress plugins and custom themes tailored to business requirements",
+       ],
+    },
+    {
+       role: "Fullstack",
+       company: "Nagila",
+       period: "March 2018 – March 2019 | Full Time",
+       points: [
+          "Delivered a full-featured CRM with smooth UI and backend integration for customer management",
+       ],
+    },
    ];
    
    const profileLists = [
@@ -131,15 +153,15 @@ const navLinks = [
     {
        id: 1,
        name: "Classic Mojito",
-       image: "/images/drink1.png",
+       image: "/images/project1.png",
        title: "Simple Ingredients, Bold Flavor",
        description:
-        "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
+        "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect project on summer nights.",
     },
     {
        id: 2,
        name: "Raspberry Mojito",
-       image: "/images/drink2.png",
+       image: "/images/project2.png",
        title: "A Zesty Classic That Never Fails",
        description:
         "The Margarita is a classic that balances tangy lime, smooth tequila, and a touch of sweetness. Shaken, frozen, or on the rocks—it’s always crisp & refreshing.",
@@ -147,15 +169,15 @@ const navLinks = [
     {
        id: 3,
        name: "Violet Breeze",
-       image: "/images/drink3.png",
+       image: "/images/project3.png",
        title: "Simple Ingredients, Bold Flavor",
        description:
-        "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
+        "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect project on summer nights.",
     },
     {
        id: 4,
        name: "Curacao Mojito",
-       image: "/images/drink4.png",
+       image: "/images/project4.png",
        title: "Crafted With Care, Poured With Love",
        description:
         "Each cocktail is made with fresh ingredients and a passion for perfecting every pour, whether you're celebrating or simply relaxing.",
@@ -164,8 +186,8 @@ const navLinks = [
    
    export {
     navLinks,
-    cocktailLists,
-    mockTailLists,
+    recentExperiences,
+    moreExperiences,
     profileLists,
     featureLists,
     goodLists,
