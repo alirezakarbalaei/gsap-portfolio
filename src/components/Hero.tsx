@@ -57,9 +57,9 @@ const Hero = () => {
         },
         0
       )
-      .to("left-leaf", { y: -200 }, 0);
+      .to(".left-leaf", { y: -200 }, 0);
 
-    const startValue = isMobile ? "top 50%" : "center 60%";
+    const startValue = "center 60%";
     const endValue = "max";
 
     const tl = gsap.timeline({
@@ -69,6 +69,7 @@ const Hero = () => {
         end: endValue,
         scrub: true,
         pin: true,
+        invalidateOnRefresh: true,
       },
     });
 
@@ -136,7 +137,7 @@ const Hero = () => {
       videoScrollTrigger = gsap.to(audio, {
         scrollTrigger: {
           trigger: "#hero",
-          start: isMobile ? "top 50%" : "center 60%",
+          start: "center 60%",
           end: "max",
           scrub: true,
           id: "audio-video",
