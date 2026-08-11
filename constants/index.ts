@@ -152,35 +152,34 @@ const navLinks = [
    const allCocktails = [
     {
        id: 1,
-       name: "Classic Mojito",
-       image: "/images/project1.png",
-       title: "Simple Ingredients, Bold Flavor",
-       description:
-        "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect project on summer nights.",
+       name: "Splahs Screen",
+       image: "/images/abt1.jpg",
+       title: "Splash Screen",
+       description: "some crucial logics implemented under the splash screen for pwa.",
     },
     {
        id: 2,
-       name: "Raspberry Mojito",
-       image: "/images/project2.png",
-       title: "A Zesty Classic That Never Fails",
+       name: "Onboarding",
+       image: "/images/abt2.jpg",
+       title: "Onboarding",
        description:
-        "The Margarita is a classic that balances tangy lime, smooth tequila, and a touch of sweetness. Shaken, frozen, or on the rocks—it’s always crisp & refreshing.",
+        "some information about the application",
     },
     {
        id: 3,
-       name: "Violet Breeze",
-       image: "/images/project3.png",
-       title: "Simple Ingredients, Bold Flavor",
+       name: "Login",
+       image: "/images/abt3.jpg",
+       title: "Login",
        description:
-        "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect project on summer nights.",
+        "Login page with otp",
     },
     {
        id: 4,
-       name: "Curacao Mojito",
-       image: "/images/project4.png",
-       title: "Crafted With Care, Poured With Love",
+       name: "Auth",
+       image: "/images/abt4.jpg",
+       title: "Authentication & Authorizatiopn",
        description:
-        "Each cocktail is made with fresh ingredients and a passion for perfecting every pour, whether you're celebrating or simply relaxing.",
+        "guid user to auth flow implemented based on bussines logic",
     },
    ];
    
