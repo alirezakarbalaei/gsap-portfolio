@@ -6,7 +6,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 const Menu = () => {
-  const contentRef = useRef();
+  const contentRef = useRef<HTMLDivElement>(null);
   const [currentIdx, setCurrentIdx] = useState(0);
 
   useGSAP(() => {
@@ -36,13 +36,13 @@ const Menu = () => {
 
   const totalCocktails = allCocktails.length;
 
-  const goToSlide = (idx) => {
+  const goToSlide = (idx: number) => {
     const newIdx = (idx + totalCocktails) % totalCocktails;
 
     setCurrentIdx(newIdx);
   };
 
-  const getCocktailAt = (idxOffset) => {
+  const getCocktailAt = (idxOffset: number) => {
     return allCocktails[
       (currentIdx + idxOffset + totalCocktails) % totalCocktails
     ];
