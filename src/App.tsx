@@ -20,7 +20,10 @@ const App = () => {
       <About />
       <Art />
       <Menu menuData={portFolioData.ballam} />
-      <Menu menuData={portFolioData.pianoJ} />
+      <Menu menuData={portFolioData.landrocker} />
+      <Menu menuData={portFolioData.radioBinam} />
+      <Menu menuData={portFolioData.pianoj} />
+      <Menu menuData={portFolioData.ketoHealthy} />
       <Contact />
     </main>
   );
