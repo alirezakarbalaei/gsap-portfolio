@@ -1,49 +1,54 @@
+
 "use client";
 
 import { useRef, useState } from "react";
-import { ballamPortfolio } from "../../constants";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import ZoomableImage from "./ZoomableImage";
 
-const Menu = () => {
+interface MenuProps {
+  menuData: typeof import("../../constants").ballamPortfolio;
+}
+
+const Menu = ({ menuData }: MenuProps) => {
   const contentRef = useRef<HTMLDivElement>(null);
   const [currentIdx, setCurrentIdx] = useState(0);
 
   useGSAP(() => {
     gsap.fromTo(
       "#title",
-      {
-        opacity: 0,
-      },
+      { opacity: 0 },
       { opacity: 1, duration: 1 }
     );
+
     gsap.fromTo(
-      ".cocktail img",
+      ".cocktail .zoomable-thumbnail",
       { opacity: 0, xPercent: -100 },
       { xPercent: 0, opacity: 1, duration: 1, ease: "power1.inOut" }
     );
+
     gsap.fromTo(
       ".details h2",
       { yPercent: 100, opacity: 0 },
-      { yPercent: 0, opacity: 100, ease: "power1.inOut" }
+      { yPercent: 0, opacity: 1, ease: "power1.inOut" }
     );
+
     gsap.fromTo(
       ".details p",
       { yPercent: 100, opacity: 0 },
-      { yPercent: 0, opacity: 100, ease: "power1.inOut" }
+      { yPercent: 0, opacity: 1, ease: "power1.inOut" }
     );
   }, [currentIdx]);
 
-  const totalCocktails = ballamPortfolio.length;
+  const totalCocktails = menuData.length;
 
   const goToSlide = (idx: number) => {
     const newIdx = (idx + totalCocktails) % totalCocktails;
-
     setCurrentIdx(newIdx);
   };
 
   const getCocktailAt = (idxOffset: number) => {
-    return ballamPortfolio[
+    return menuData[
       (currentIdx + idxOffset + totalCocktails) % totalCocktails
     ];
   };
@@ -60,6 +65,7 @@ const Menu = () => {
         id="m-left-leaf"
         className="w-[100px] md:w-[200px]"
       />
+
       <img
         src="/images/git.png"
         alt="right-leaf"
@@ -70,9 +76,11 @@ const Menu = () => {
       <h2 id="menu-heading" className="sr-only">
         Cocktail Menu
       </h2>
+
       <nav className="cocktail-tabs" aria-label="Cocktail Navigation">
-        {ballamPortfolio.map((cocktail, idx) => {
+        {menuData.map((cocktail, idx) => {
           const isActive = idx === currentIdx;
+
           return (
             <button
               key={cocktail.id}
@@ -102,6 +110,7 @@ const Menu = () => {
               aria-hidden="true"
             />
           </button>
+
           <button
             className="text-left"
             onClick={() => goToSlide(currentIdx + 1)}
@@ -114,8 +123,13 @@ const Menu = () => {
             />
           </button>
         </div>
+
         <div className="cocktail">
-          <img src={currentCocktail.image} className="object-contain" alt="" />
+          <ZoomableImage
+            src={currentCocktail.image}
+            alt={currentCocktail.name}
+            wrapperClassName="w-full"
+          />
         </div>
 
         <div className="recipe">
@@ -123,6 +137,7 @@ const Menu = () => {
             <p>Module:</p>
             <p id="title">{currentCocktail.name}</p>
           </div>
+
           <div className="details">
             <h2>{currentCocktail.title}</h2>
             <p>{currentCocktail.description}</p>

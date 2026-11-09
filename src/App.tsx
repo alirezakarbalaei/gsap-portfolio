@@ -7,6 +7,7 @@ import About from "./components/About";
 import Art from "./components/Art";
 import Menu from "./components/Menu";
 import Contact from "./components/Contact";
+import { ballamPortfolio } from "../constants";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -18,7 +19,7 @@ const App = () => {
       <Experiences />
       <About />
       <Art />
-      <Menu />
+      <Menu menuData={ballamPortfolio} />
       <Contact />
     </main>
   );
