@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { allCocktails } from "../../constants";
+import { ballamPortfolio } from "../../constants";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
@@ -34,7 +34,7 @@ const Menu = () => {
     );
   }, [currentIdx]);
 
-  const totalCocktails = allCocktails.length;
+  const totalCocktails = ballamPortfolio.length;
 
   const goToSlide = (idx: number) => {
     const newIdx = (idx + totalCocktails) % totalCocktails;
@@ -43,7 +43,7 @@ const Menu = () => {
   };
 
   const getCocktailAt = (idxOffset: number) => {
-    return allCocktails[
+    return ballamPortfolio[
       (currentIdx + idxOffset + totalCocktails) % totalCocktails
     ];
   };
@@ -71,7 +71,7 @@ const Menu = () => {
         Cocktail Menu
       </h2>
       <nav className="cocktail-tabs" aria-label="Cocktail Navigation">
-        {allCocktails.map((cocktail, idx) => {
+        {ballamPortfolio.map((cocktail, idx) => {
           const isActive = idx === currentIdx;
           return (
             <button

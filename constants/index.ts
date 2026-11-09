@@ -149,38 +149,77 @@ const navLinks = [
     },
    ];
    
-   const allCocktails = [
+   const ballamPortfolio = [
     {
        id: 1,
        name: "Splahs Screen",
        image: "/images/abt1.jpg",
        title: "Splash Screen",
-       description: "some crucial logics implemented under the splash screen for pwa.",
+      description: "Some crucial logic is implemented under the splash screen for the PWA.",
     },
     {
        id: 2,
        name: "Onboarding",
        image: "/images/abt2.jpg",
        title: "Onboarding",
-       description:
-        "some information about the application",
+      description: "Some information about the application.",
     },
     {
        id: 3,
        name: "Login",
        image: "/images/abt3.jpg",
        title: "Login",
-       description:
-        "Login page with otp",
+      description: "Login page with OTP.",
     },
     {
        id: 4,
        name: "Auth",
        image: "/images/abt4.jpg",
        title: "Authentication & Authorizatiopn",
-       description:
-        "guid user to auth flow implemented based on bussines logic",
+      description: "Guide the user through the authentication flow, implemented based on business logic.",
     },
+   {
+      id: 5,
+      name: "Orders",
+      image: "/images/abt5.jpg",
+      title: "Driver Orders",
+      description: "Allow drivers to see orders (Active, Finished, Canceled by Driver) and manage requests based on their needs.",
+   },
+   {
+      id: 6,
+      name: "Order Details",
+      image: "/images/abt6.jpg",
+      title: "Information about selected order",
+      description: "The initial data needed for a driver to see and accept an order, completing the process.",
+   },
+   {
+      id: 7,
+      name: "Filters",
+      image: "/images/abt7.jpg",
+      title: "Cargo Details",
+      description: "Bottom sheet filter based on newest, oldest, highest weight, lowest weight, and nearest orders.",
+   },
+   {
+      id: 8,
+      name: "Load Information",
+      image: "/images/abt8.jpg",
+      title: "Push Notifications",
+      description: "Load information, contact details of consignee and consignor, and navigation data.",
+   },
+   {
+      id: 9,
+      name: "Advanced orders filter",
+      image: "/images/abt9.jpg",
+      title: "Filter orders with concies data",
+      description: "Search and filter to find the exact order you want.",
+   },
+   {
+      id: 10,
+      name: "Fleet & Fleet Loader type",
+      image: "/images/abt10.jpg",
+      title: "Choose your fleet details",
+      description: "Choose your fleet specifications to see the related orders that match your vehicle.",
+   },
    ];
    
    export {
@@ -193,5 +232,5 @@ const navLinks = [
     openingHours,
     storeInfo,
     socials,
-    allCocktails,
+    ballamPortfolio,
    };
