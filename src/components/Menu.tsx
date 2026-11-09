@@ -7,7 +7,7 @@ import gsap from "gsap";
 import ZoomableImage from "./ZoomableImage";
 
 interface MenuProps {
-  menuData: typeof import("../../constants").ballamPortfolio;
+  menuData: typeof import("../../constants").portFolioData.ballam;
 }
 
 const Menu = ({ menuData }: MenuProps) => {
