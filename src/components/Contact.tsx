@@ -1,4 +1,4 @@
-import { portfolioInfo, socials } from "../../constants";
+import { contactInfo, socials } from "../../constants";
 import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/all";
 import gsap from "gsap";
@@ -62,12 +62,12 @@ const Contact = () => {
         
         <div>
           <h3>Phone Number</h3>
-          <p>(+98) 919 728 9072</p>
+          <a className="text-lg" href={`tel:${contactInfo.phone}`}>{contactInfo.phone}</a>
         </div>
 
         <div>
           <h3>Email</h3>
-          <p>{portfolioInfo.contact.email}</p>
+          <a className="text-lg" href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>
         </div>
 
         <div>

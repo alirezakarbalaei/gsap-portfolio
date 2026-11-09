@@ -1,5 +1,5 @@
 import gsap from "gsap";
-import { featureLists, goodLists } from "../../constants";
+import { featureLists, mindSet } from "../../constants";
 import { useGSAP } from "@gsap/react";
 import { useMediaQuery } from "react-responsive";
 
@@ -41,7 +41,7 @@ const Art = () => {
         <h2 className="will-fade">The ART</h2>
         <div className="content">
           <ul className="space-y-4 will-fade">
-            {goodLists.map((good, idx) => (
+            {mindSet.map((good, idx) => (
               <li key={idx} className="flex items-center gap-2">
                 <img src="/images/check.png" alt="check" />
                 <p>{good}</p>
