@@ -97,20 +97,17 @@ const featureLists = [
   "Thoughtfully crafted experiences",
 ];
 
-const goodLists = [
+const mindSet = [
   "User emotions at the core",
   "Designs that resonate deeply",
   "Empathy-driven decisions in action",
   "Moments that leave an impact",
 ];
 
-const portfolioInfo = {
+const contactInfo = {
   heading: "Where to Find Me",
-  address: "456, Raq Blvd. #404, Los Angeles, CA 90210",
-  contact: {
-    phone: "+989197289072",
-    email: "alirezakarbalaeimorad@gmail.com",
-  },
+  phone: "+989197289072",
+  email: "alirezakarbalaeimorad@gmail.com",
 };
 
 const socials = [
@@ -211,8 +208,8 @@ const portFolioData = {
         "Choose your fleet specifications to see the related orders that match your vehicle.",
     },
   ],
-  pianoJ:[
-     {
+  pianoJ: [
+    {
       id: 1,
       name: "Piano J",
       image: "/images/portfolio/pianoj/pianoj.png",
@@ -220,7 +217,7 @@ const portFolioData = {
       description:
         "Music shop that generate songs and sells the note as a digital product",
     },
-  ]
+  ],
 };
 
 export {
@@ -228,8 +225,8 @@ export {
   recentExperiences,
   moreExperiences,
   featureLists,
-  goodLists,
-  portfolioInfo,
+  mindSet,
+  contactInfo,
   socials,
   portFolioData,
 };
