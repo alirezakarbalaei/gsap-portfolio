@@ -23,7 +23,7 @@ const Menu = ({ menuData }: MenuProps) => {
 
     gsap.fromTo(
       ".cocktail .zoomable-thumbnail",
-      { opacity: 0, xPercent: -100 },
+      { opacity: 0, xPercent: -50 },
       { xPercent: 0, opacity: 1, duration: 1, ease: "power1.inOut" }
     );
 

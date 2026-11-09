@@ -1,4 +1,4 @@
-import { socials } from "../../constants";
+import { portfolioInfo, socials } from "../../constants";
 import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/all";
 import gsap from "gsap";
@@ -67,7 +67,7 @@ const Contact = () => {
 
         <div>
           <h3>Email</h3>
-          <p>alireza.version@gmail.com</p>
+          <p>{portfolioInfo.contact.email}</p>
         </div>
 
         <div>

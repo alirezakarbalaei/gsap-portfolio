@@ -221,7 +221,7 @@ const Hero = () => {
             </div>
             <div className="view-experiences">
               <p className="subtitle">
-                Emotion-driven development focuses on designing software that
+                Emotion driven development focuses on designing software that
                 anticipates and responds to users feelings, creating experiences
                 that feel intuitive, engaging, and human-centered. It
                 prioritizes emotional impact alongside functionality to boost
