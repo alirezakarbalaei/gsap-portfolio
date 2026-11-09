@@ -15,6 +15,10 @@ const navLinks = [
     id: "contact",
     title: "Contact",
   },
+  {
+    id: "blog",
+    title: "Blog",
+  },
 ];
 
 const recentExperiences = [
@@ -86,21 +90,6 @@ const moreExperiences = [
   },
 ];
 
-const profileLists = [
-  {
-    imgPath: "/images/profile1.png",
-  },
-  {
-    imgPath: "/images/profile2.png",
-  },
-  {
-    imgPath: "/images/profile3.png",
-  },
-  {
-    imgPath: "/images/profile4.png",
-  },
-];
-
 const featureLists = [
   "Code that feels intuitive",
   "Interfaces that spark delight",
@@ -115,21 +104,14 @@ const goodLists = [
   "Moments that leave an impact",
 ];
 
-const storeInfo = {
-  heading: "Where to Find Us",
+const portfolioInfo = {
+  heading: "Where to Find Me",
   address: "456, Raq Blvd. #404, Los Angeles, CA 90210",
   contact: {
-    phone: "(555) 987-6543",
-    email: "hello@jsmcocktail.com",
+    phone: "+989197289072",
+    email: "alirezakarbalaeimorad@gmail.com",
   },
 };
-
-const openingHours = [
-  { day: "Mon–Thu", time: "11:00am – 12am" },
-  { day: "Fri", time: "11:00am – 2am" },
-  { day: "Sat", time: "9:00am – 2am" },
-  { day: "Sun", time: "9:00am – 1am" },
-];
 
 const socials = [
   {
@@ -149,95 +131,105 @@ const socials = [
   },
 ];
 
-const ballamPortfolio = [
-  {
-    id: 1,
-    name: "Splahs Screen",
-    image: "/images/abt1.jpg",
-    title: "Splash Screen",
-    description:
-      "Some crucial logic is implemented under the splash screen for the PWA.",
-  },
-  {
-    id: 2,
-    name: "Onboarding",
-    image: "/images/abt2.jpg",
-    title: "Onboarding",
-    description: "Some information about the application.",
-  },
-  {
-    id: 3,
-    name: "Login",
-    image: "/images/abt3.jpg",
-    title: "Login",
-    description: "Login page with OTP.",
-  },
-  {
-    id: 4,
-    name: "Auth",
-    image: "/images/abt4.jpg",
-    title: "Authentication & Authorizatiopn",
-    description:
-      "Guide the user through the authentication flow, implemented based on business logic.",
-  },
-  {
-    id: 5,
-    name: "Orders",
-    image: "/images/abt5.jpg",
-    title: "Driver Orders",
-    description:
-      "Allow drivers to see orders (Active, Finished, Canceled by Driver) and manage requests based on their needs.",
-  },
-  {
-    id: 6,
-    name: "Order Details",
-    image: "/images/abt6.jpg",
-    title: "Information about selected order",
-    description:
-      "The initial data needed for a driver to see and accept an order, completing the process.",
-  },
-  {
-    id: 7,
-    name: "Filters",
-    image: "/images/abt7.jpg",
-    title: "Cargo Details",
-    description:
-      "Bottom sheet filter based on newest, oldest, highest weight, lowest weight, and nearest orders.",
-  },
-  {
-    id: 8,
-    name: "Advanced orders filter",
-    image: "/images/abt8.jpg",
-    title: "Filter orders with concies data",
-    description: "Search and filter to find the exact order you want.",
-  },
-  {
-    id: 9,
-    name: "Load Information",
-    image: "/images/abt9.jpg",
-    title: "Push Notifications",
-    description:
-      "Load information, contact details of consignee and consignor, and navigation data.",
-  },
-  {
-    id: 10,
-    name: "Fleet & Fleet Loader type",
-    image: "/images/abt10.jpg",
-    title: "Choose your fleet details",
-    description:
-      "Choose your fleet specifications to see the related orders that match your vehicle.",
-  },
-];
+const portFolioData = {
+  ballam: [
+    {
+      id: 1,
+      name: "Splahs Screen",
+      image: "/images/portfolio/ballam/ballam1.jpg",
+      title: "Splash Screen",
+      description:
+        "Some crucial logic is implemented under the splash screen for the PWA.",
+    },
+    {
+      id: 2,
+      name: "Onboarding",
+      image: "/images/portfolio/ballam/ballam2.jpg",
+      title: "Onboarding",
+      description: "Some information about the application.",
+    },
+    {
+      id: 3,
+      name: "Login",
+      image: "/images/portfolio/ballam/ballam3.jpg",
+      title: "Login",
+      description: "Login page with OTP.",
+    },
+    {
+      id: 4,
+      name: "Auth",
+      image: "/images/portfolio/ballam/ballam4.jpg",
+      title: "Authentication & Authorizatiopn",
+      description:
+        "Guide the user through the authentication flow, implemented based on business logic.",
+    },
+    {
+      id: 5,
+      name: "Orders",
+      image: "/images/portfolio/ballam/ballam5.jpg",
+      title: "Driver Orders",
+      description:
+        "Allow drivers to see orders (Active, Finished, Canceled by Driver) and manage requests based on their needs.",
+    },
+    {
+      id: 6,
+      name: "Order Details",
+      image: "/images/portfolio/ballam/ballam6.jpg",
+      title: "Information about selected order",
+      description:
+        "The initial data needed for a driver to see and accept an order, completing the process.",
+    },
+    {
+      id: 7,
+      name: "Filters",
+      image: "/images/portfolio/ballam/ballam7.jpg",
+      title: "Cargo Details",
+      description:
+        "Bottom sheet filter based on newest, oldest, highest weight, lowest weight, and nearest orders.",
+    },
+    {
+      id: 8,
+      name: "Advanced orders filter",
+      image: "/images/portfolio/ballam/ballam8.jpg",
+      title: "Filter orders with concies data",
+      description: "Search and filter to find the exact order you want.",
+    },
+    {
+      id: 9,
+      name: "Load Information",
+      image: "/images/portfolio/ballam/ballam9.jpg",
+      title: "Push Notifications",
+      description:
+        "Load information, contact details of consignee and consignor, and navigation data.",
+    },
+    {
+      id: 10,
+      name: "Fleet and Fleet Loader type",
+      image: "/images/portfolio/ballam/ballam10.jpg",
+      title: "Choose your fleet details",
+      description:
+        "Choose your fleet specifications to see the related orders that match your vehicle.",
+    },
+  ],
+  pianoJ:[
+     {
+      id: 1,
+      name: "Piano J",
+      image: "/images/portfolio/pianoj/pianoj.png",
+      title: "Music Notes Store",
+      description:
+        "Music shop that generate songs and sells the note as a digital product",
+    },
+  ]
+};
 
 export {
   navLinks,
   recentExperiences,
   moreExperiences,
-  profileLists,
   featureLists,
   goodLists,
-  openingHours,
-  storeInfo,
+  portfolioInfo,
   socials,
-  ballamPortfolio,
+  portFolioData,
 };
